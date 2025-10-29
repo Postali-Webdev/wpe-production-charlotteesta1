@@ -1,0 +1,46 @@
+{
+    "key": "group_6787ebda9b524",
+    "title": "PPC Master - Map",
+    "fields": [
+        {
+            "key": "field_6787ebdaf7b1c",
+            "label": "Map Iframe",
+            "name": "map_iframe",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/map"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1746127524,
+    "local_file": "\/nas\/content\/live\/charlotteesta1\/wp-content\/plugins\/Postali-Modular-PPC-main\/includes\/acf-json\/group_6787ebda9b524.json"
+}

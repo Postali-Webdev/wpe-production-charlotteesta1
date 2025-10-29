@@ -1,0 +1,177 @@
+{
+    "key": "group_65df30c8628d0",
+    "title": "PPC Master - Content Slider",
+    "fields": [
+        {
+            "key": "field_65df30c83d6fd",
+            "label": "Slider Type",
+            "name": "slider_type",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "awards": "Awards",
+                "results": "Case Results",
+                "testimonial": "Testimonials",
+                "generic": "Generic Content"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_65df32583d6fe",
+            "label": "Awards",
+            "name": "awards",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_65df30c83d6fd",
+                        "operator": "==",
+                        "value": "awards"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": []
+        },
+        {
+            "key": "field_65df33073d700",
+            "label": "Case Results",
+            "name": "case_results",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_65df30c83d6fd",
+                        "operator": "==",
+                        "value": "results"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": []
+        },
+        {
+            "key": "field_65df33573d703",
+            "label": "Testimonials",
+            "name": "testimonials",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_65df30c83d6fd",
+                        "operator": "==",
+                        "value": "testimonial"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": []
+        },
+        {
+            "key": "field_65df33bb3d707",
+            "label": "Generic Content",
+            "name": "generic_content",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_65df30c83d6fd",
+                        "operator": "==",
+                        "value": "generic"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/slider"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1746127524,
+    "local_file": "\/nas\/content\/live\/charlotteesta1\/wp-content\/plugins\/Postali-Modular-PPC-main\/includes\/acf-json\/group_65df30c8628d0.json"
+}

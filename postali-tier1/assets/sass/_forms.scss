@@ -1,0 +1,49 @@
+.gform_wrapper {
+    padding: 50px 50px 25px;
+    width: 100%;
+    box-sizing: border-box;
+
+    @include respond(tab-port) {
+        padding:30px 30px 20px;
+    }
+
+    .gform_required_legend {
+        display: none;
+    }
+
+    input, textarea, select, label {
+        font-family: $sans !important;
+    }
+
+    .gfield {
+        input {
+            padding:12px !important;
+        }
+    }
+
+    label {
+        color:$white;
+        text-transform: none !important;
+        font-size: 14px !important;
+        font-weight: normal;
+    }
+
+    .gfield_required {
+        color: $white !important;
+    }
+
+    input[type="submit"] {
+        text-transform: none !important;
+        font-weight: bold !important;
+        border:none;
+        padding: 15px 20px;
+        display: block;
+        width: 100%;
+        transition:$trans;
+        white-space: break-spaces;
+        line-height: 130% !important;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        font-family: $sans !important;
+    }
+}

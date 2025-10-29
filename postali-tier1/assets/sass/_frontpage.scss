@@ -1,0 +1,406 @@
+/**
+ * Template Front Page Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+.home {
+    @include respond(tab-land) {
+        p#breadcrumbs {
+            display:none;
+        }
+    }
+    .body-container {
+        margin-top: 97px;
+        .banner {
+            background-size: contain !important;
+            background-position: top center !important;
+            background-repeat: no-repeat;
+            padding: 150px 0 200px 0;
+            @include respond(tab-port) {
+                background-position: top right -280px !important;
+            }
+            @include respond(phone) {
+                background-position: top right -165px !important;
+            }
+            @include respond(phone-md) {
+                padding: 50px 0 150px 0;
+            }
+            @include respond(phone-sm) {
+                background-position: top right -145px !important;
+                background-size: 112% !important;
+                padding: 15px 0 150px 0;
+            }
+            .main-contact {
+                @include respond(phone) {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+                .contact-block-left {
+                    @include respond(phone) {
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+                .contact-block-right {
+                    p {
+                        margin-bottom: 0;
+                        max-width: 100%;
+                    }
+                }
+            }
+            h1, p {
+                color: $dk-green !important;
+            }
+            h1 {
+                position: relative;
+                padding-left: 40px;
+                font-weight: $normal;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 10px;
+                    background: $olive;
+                }
+            }
+            .columns {
+                align-items: center;
+                .column-50 {
+                    &:last-of-type {
+                        padding-left: 75px;
+                        @include respond(desktop) {
+                            padding-left: 0;
+                        }
+                        @include respond(tab-port) {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .panel-1 {
+            @include image-copy-50-block(0);
+        }
+        .panel-2 {
+            padding-bottom: 100px !important; 
+            @include respond(phone) {
+                padding-bottom: 70px !important;
+            } 
+            .section-wrap {
+                @include image-copy-50-block(0);
+            }
+            .section-pa {
+                .container {
+                    @include respond(tab-land) {
+                        padding: 0 !important;
+                    }
+                    @include respond(phone) {
+                        padding: 0 !important;
+                        .big-text { 
+                            padding: 0 30px;
+                            text-align: center;
+                        }
+                    }
+                    .pa-wrapper {
+                        a {
+                            text-decoration: none !important;
+                            &:hover {
+                                font-weight: $normal;
+                                text-decoration: underline !important;
+                                color: $white !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .panel-3 {
+            .copy {
+                padding: 0 0 130px 0; 
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                @include respond(desktop-lg) {
+                    padding-top: 80px;
+                }
+                @include respond(tab-land) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                @include respond(phone) {
+                    padding-bottom: 100px;
+                }
+                .fp-container {
+                    padding-top: 130px;
+                }
+                &-dk {
+                    flex-grow: 1;
+                    @include respond(tab-land) {
+                        padding-top: 30px;
+                    }
+                    p {
+                        color: $white;
+                        &.big-text {
+                            margin: 30px 0 50px !important;
+                        }
+                    }
+                    .number-list {
+                        .list-item {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            margin-bottom: 30px;
+                            p {
+                                font-weight: $normal;
+                                margin-bottom: 10px;
+                                font-size: 16px;
+                                &.number {
+                                    font-family: $libre-baskerville;
+                                    color: $gold;
+                                    font-size: 40px;
+                                    font-weight: $normal;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            .copy:not(.copy-dk) {
+                @include respond(tab-land) {
+                    padding-bottom: 50px;
+                }
+            }
+        }
+        .panel-4 {
+            .section-wrap {
+                .columns {
+                    justify-content: center;
+                    align-items: center;
+                    @include respond(tab-port) {
+                        flex-direction: column;
+                    }
+                    .column-50 {
+                        @include respond(tab-port) {
+                            width: 100% !important;
+                        }
+                        &.copy {
+                            justify-content: center;
+                            p {
+                                color: $white;
+                                max-width: 455px;
+                                margin: 0;
+                                @include respond(tab-port) {
+                                    padding: 60px;
+                                }
+                                @include respond(phone) {
+                                    padding: 60px 0;
+                                }
+                            }
+                        }
+                    }
+ 
+                }
+            }
+            .section-pa {
+                @include respond(tab-land) {
+                    padding-top: 0 !important;
+                }
+                .container {
+                    @include respond(tab-land) {
+                        padding: 0 !important;
+                    }
+                }
+                .pa-wrapper {
+                    margin-bottom: 50px;
+                    a {
+                        text-decoration: none !important;
+                        &:hover {
+                            font-weight: $normal;
+                            text-decoration: underline !important;
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .panel-5 {
+            @include image-copy-50-block(200);
+            .columns {
+                justify-content: center;
+                align-items: center;
+            }
+            .contact-block {
+                display: flex;
+                flex-direction: column;
+                @include respond(tab-port) {
+                    padding-bottom: 90px;
+                }
+                p {
+                    margin-bottom: 10px;
+                    font-weight: $bold;
+                }
+                a {
+                    width: fit-content;
+                    &.btn {
+                        background: $dk-green;
+                        border: solid 1px $dk-green;
+                        &:hover {
+                            background: $white;
+                            color: $dk-green;
+                        }
+                    }
+                }
+            }
+        }
+
+        section {
+            position: relative;
+            &.no-pad {
+                padding: 0;
+
+            }
+            &.break {
+                padding: 100px 60px;
+                @include respond(phone) {
+                    padding: 55px 30px 100px;
+                }
+                .column-full {
+                    justify-content: center;
+                    align-items: center;
+                }
+                p {
+                    color: $white;
+                    text-align: center;
+                    max-width: 1000px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .column-50 {
+            &.true-50 {
+                width: 50% !important;
+            }
+            &.image {
+                img, picture {
+                    object-fit: cover;
+                    object-position: top;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .fp-container {
+            padding: 0 80px;
+            z-index: 1;
+            position: relative;
+            @include respond(desktop-lg) {
+                padding:0 60px !important;
+            }
+        
+            @include respond(phone) {
+                padding: 0 30px !important;
+            }
+        }
+        .section-tab {
+            background: $gold;
+            padding: 15px;
+            position: absolute;
+            top: -55px;
+            left: 80px;
+            height: 90px;
+            width: 70px;
+            z-index: 2;
+            @include respond(desktop-lg) {
+                left: 60px;
+            }
+            @include respond(phone) {
+                left: 30px;
+            }
+            p {
+                margin-bottom: 0;
+                line-height: normal;
+                &.number {
+                    font-size: 30px;
+                    font-family: $libre-baskerville;
+                }
+                &.title {
+                    font-size: 14px;
+                    font-family: $libre-baskerville;
+                }
+            }
+        }
+        .pa-wrapper {
+            justify-content: center;
+            align-items: center;
+            max-width:$container-max-width;
+            margin: 0 auto;
+            .pa-block {
+                background: $dk-green;
+                height: 450px;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 75px 50px 50px;
+                border: solid 2.5px $grey;
+                @include respond(desktop) {
+                    padding: 75px 30px 50px;
+                }
+                @include respond(tab-land) {
+                    height: auto;
+                    padding: 75px 50px 50px;
+                    border-left: 0;
+                    border-right: 0;
+                    border-top: 0;
+                }
+                @include respond(phone) {
+                    padding: 50px 30px;
+                }
+                a {
+                    text-decoration: none !important;
+                }
+                p {
+                    margin-bottom: 0;
+                    color: $white;
+                    &.pa-title {
+                        font-size: 32px;
+                        line-height: 38px;
+                        font-weight: $bold;
+                        text-decoration: underline;
+                        position: relative;
+                        padding-left: 40px;
+                        margin-bottom: 15px;
+                        @include respond(phone) {
+                            font-size: 28px;
+                        }
+                        &:before {
+                            content: "";
+                            display: block;
+                            height: 100%;
+                            width: 23px;
+                            background-image: url('/wp-content/uploads/2023/05/link-arrow-icon.svg');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            filter: invert(84%) sepia(35%) saturate(695%) hue-rotate(338deg) brightness(86%) contrast(82%);
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            background-position: center top 10px;
+                            
+                        }
+                    }
+                }
+
+                
+            }
+        }
+    }
+
+}
