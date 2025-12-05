@@ -104,6 +104,10 @@ header {
                         }
                     }
 
+                    @include respond(phone) {
+                        padding-top: 50px !important;
+                    }
+
                     li {
                         display: flex;
                         margin-left:5px;
@@ -144,15 +148,16 @@ header {
 
                             .accordion-toggle {
                                 position: absolute;
-                                top: 16px;
+                                top: 35px;
                                 right: 30px;
                                 z-index: 10;
-                                width: auto;
-                                height: 30px;
-                                transition:$trans;
-                                display:flex;
+                                width: 40px;
+                                height: 40px;
+                                transition: 0.2s linear;
+                                display: flex;
                                 justify-content: center;
                                 align-items: center;
+                                border: 1px solid $olive;
 
                                 span {
                                     color: $white;
@@ -299,6 +304,14 @@ header {
 
                         &.nav-contact {
                             margin: 0 20px !important;
+
+                            @include respond(phone) {
+                                position: fixed;
+                                top: 90px;
+                                width: calc(100% + 30px);
+                                left: -30px;
+                                z-index: 15;
+                            }
                             
                             a {
                                 padding: 12px 40px !important;

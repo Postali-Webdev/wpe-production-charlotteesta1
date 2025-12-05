@@ -52,9 +52,11 @@
                         <div class="contact-block-left">
                             <a href="tel:<?php the_field('phone_number','options'); ?>" class="btn"><?php the_field('phone_number','options'); ?></a>
                         </div>
+                        <?php if (!is_page_template('page-contact.php')) { ?>
                         <div class="contact-block-right">
                             <a href="/contact/" title="Online form">Online Form</a>
                         </div>
+                        <?php } ?>
                     </div>
                 <?php } ?>
             </div>
