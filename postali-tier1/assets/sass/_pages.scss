@@ -56,6 +56,42 @@
             margin:0 auto;
         }
     }
+
+    .observer {
+        margin-bottom: 30px;
+        padding: 30px 50px 30px 30px;
+        box-sizing: border-box;
+        width: 100%;
+        background: $white;
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 40px;
+        align-items: center;
+
+        @include respond(tab-land) {
+            grid-template-columns: 1fr;
+        }
+
+        .img {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .copy {
+            img {
+                max-width: 300px;
+                margin-bottom: 10px;
+            }
+
+            p.large {
+                font-weight: bold;
+                font-size: 19px;
+                line-height: 130%;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 
 .page-template-page-interior {
@@ -79,20 +115,24 @@
 
 .page-template-page-landing, .blog, .archive {
     .block-grid {
-        column-count: 3;
+        -moz-column-count: 3;
+             column-count: 3;
         grid-gap: 10px;
         @include respond(desktop) {
-            column-count: 2;
+            -moz-column-count: 2;
+                 column-count: 2;
         }
         @include respond(phone) {
-            column-count: 1;
+            -moz-column-count: 1;
+                 column-count: 1;
         }
         article {
             background: $white;
             display: grid;
             grid-template-rows: 1fr auto;
             margin-bottom: 10px;
-            break-inside: avoid;
+            -moz-column-break-inside: avoid;
+                 break-inside: avoid;
             padding: 20px 0 0 0;
             margin: 0 0 10px 0;
             box-sizing: border-box;
@@ -121,7 +161,8 @@
                         background-image: url(/wp-content/uploads/2023/05/link-arrow-icon.svg);
                         background-repeat: no-repeat;
                         background-size: contain;
-                        filter: invert(84%) sepia(35%) saturate(695%) hue-rotate(338deg) brightness(86%) contrast(82%);
+                        -webkit-filter: invert(84%) sepia(35%) saturate(695%) hue-rotate(338deg) brightness(86%) contrast(82%);
+                                filter: invert(84%) sepia(35%) saturate(695%) hue-rotate(338deg) brightness(86%) contrast(82%);
                         position: absolute;
                         left: 0;
                         top: 8px;
@@ -137,6 +178,8 @@
                 right: 0;
                 cursor: pointer;
                 padding-right: 50px;
+                width: -webkit-fit-content;
+                width: -moz-fit-content;
                 width: fit-content;
                 margin: 0 0 0 auto;
                 height: 33px;
@@ -244,7 +287,8 @@
                 img {
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
+                    -o-object-fit: cover;
+                       object-fit: cover;
                 }
             }
             .copy-wrapper {
