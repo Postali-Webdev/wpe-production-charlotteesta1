@@ -310,6 +310,10 @@
         gap: 40px;
         margin: 40px 0;
 
+        @include respond(tab-land) {
+            grid-template-columns: 1fr;
+        }
+
         .media-block {
             display: grid;
             text-align: left;
@@ -319,8 +323,16 @@
             gap: 20px;
             align-items: center;
 
+            @include respond(phone) {
+                grid-template-columns: 1fr;
+            }
+
             .img {
                 height:100%;
+
+                @include respond(phone) {
+                    min-height: 200px;
+                }
                 
                 img {
                     height: 100%;
