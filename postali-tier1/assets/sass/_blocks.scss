@@ -298,9 +298,10 @@
 
 .media {
     h2 {
-        font-family: "Libre Baskerville", serif !important;
-        color: #071f1e;
+        font-family: $libre-baskerville;
+        color: $dk-green;
         font-weight: normal;
+        font-size:40px;
     }
 
     .media-blocks {
