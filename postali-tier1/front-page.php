@@ -69,6 +69,8 @@ $p5_block_copy = get_field('p5_block_copy');
         </div>
     </section>
 
+    <?php get_template_part('block', 'media'); ?>
+
     <section class="panel-2 no-pad">
         <div class="section-tab">
             <p class="number"><?php esc_html_e( $p2_tab['section_number'] ); ?></p>

@@ -30,6 +30,8 @@ get_header();?>
             </div>
         </div>
     </section>
+
+    <?php get_template_part('block', 'media'); ?>
     
     <?php if(get_field('include_awards','options')) : ?>
         <?php get_template_part('block','awards'); ?>

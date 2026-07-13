@@ -295,3 +295,63 @@
         color: $dk-green !important;
     }
 }
+
+.media {
+    h2 {
+        font-family: "Libre Baskerville", serif !important;
+        color: #071f1e;
+        font-weight: normal;
+    }
+
+    .media-blocks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin: 40px 0;
+
+        .media-block {
+            display: grid;
+            text-align: left;
+            background: $white;
+            padding: 25px;
+            grid-template-columns: 170px 1fr;
+            gap: 20px;
+            align-items: center;
+
+            .img {
+                height:100%;
+                
+                img {
+                    height: 100%;
+                    width: 100%;
+                    -o-object-fit: cover;
+                       object-fit: cover;
+                }
+            }
+
+            .copy {
+                img {
+                    max-width: 300px;
+                    height: auto;
+                }
+
+                p.large {
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 1.4;
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+
+                }
+
+                .btn {
+                    font-family: "Open Sans", sans-serif;
+                    background: none;
+                    color: $blk;
+                    border: 1px solid $blk;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
